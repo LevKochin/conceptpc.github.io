@@ -215,7 +215,13 @@ html {
     color: white;
 }
 
-/* Анимации и стилистика для SVG последнего элемента. Компьютер с различным описанием */
+/* 
+
+    ----------------------------------------------------------------------------------
+    Анимации и стилистика для SVG последнего элемента. Компьютер с различным описанием 
+    ----------------------------------------------------------------------------------
+    
+*/
 #secondLeftLine,
 #firstLeftLine,
 #thirdLeftLine,
@@ -351,9 +357,54 @@ html {
     }
 }
 
-/*Анимация и стилистика надписи - Dream*/
+/*
+        -------------------------------------
+        Анимация и стилистика Inform Block
+        --------------------------------------
+*/
+
+.imageOne, .imageTwo, .imageThree {
+    opacity: 0;
+}
+
+.topImageAnimation {
+    animation: topImageAnimationKF 1s forwards;
+}
+
+@keyframes topImageAnimationKF {
+    to{
+        opacity: 1;
+    }
+}
+
+.middleImageAnimation {
+    animation: middleImageAnimationKF 1s 0.5s forwards;
+}
+
+@keyframes middleImageAnimationKF {
+    to{
+        opacity: 1;
+    }
+}
+
+.bottomImageAnimation {
+    animation: bottomImageAnimationKF 1s 1s forwards;
+}
+
+@keyframes bottomImageAnimationKF {
+    to{
+        opacity: 1;
+    }
+}
+/*
+        -------------------------------------
+        Анимация и стилистика надписи - Dream
+        --------------------------------------
+*/
 .e {
     opacity: 1;
+    stroke: aliceblue;
+    stroke-width: 3;
 }
 .k, .l, .j, .d, .f, .g, .h, .main {
     opacity: 0;
@@ -439,7 +490,7 @@ html {
     }
 }
 .eAnimation{
-    animation: eAnimationKF 0.2s forwards;
+    animation: eAnimationKF 1s forwards;
 }
 
 @keyframes eAnimationKF {

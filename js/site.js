@@ -45,10 +45,15 @@ $('html body').keydown(function (e) {
 
 // Begin Intersection Observer Animation Listener For Computer SVG Pc last block
 window.onload = () => {
-    console.log("Страница загружена");
+    // Наблюдаемое, как объект PC
     let targetPC = document.querySelector(".comp");
+    // Наблюдаемое, как объект DREAM
     let targetDream = document.getElementById("dream");
-    
+    // Наблюдаемое, как объект информационного блока
+    let targetInform = document.querySelector(".imageTwo");
+
+    // Конфигурация под наблюдателя или условия пересечения наблюдателя и наблюдаемого
+    // Когда root: null - подразумевается, что в качестве наблюдателя выступает viewport
     let optionsForPc = {
         root: null,
         rootMargin: "0px",
@@ -59,9 +64,17 @@ window.onload = () => {
         rootMargin: "0px",
         threshold: 0.7
     }
+    let optionsInformBlock = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.7
+    }
+
+    // Наблюдатель и вызов действия при пересечении наблюдателя и наблюдаемого
+    // Подразумевается действие с надписью DREAM 
     const observerPathes = new IntersectionObserver((entries, observerPathes) => {
         entries.forEach(entery => {
-            if(entery.isIntersecting) {
+            if (entery.isIntersecting) {
                 let firstGroupPathes = document.querySelector(".e");
                 let secondGroupPathes = document.querySelector(".k");
                 let thirdGroupPathes = document.querySelector(".l");
@@ -84,6 +97,26 @@ window.onload = () => {
             }
         })
     }, optionsForPathes);
+
+    // Наблюдатель и вызов действия при пересечении наблюдателя и наблюдаемого
+    // Подразумевается действие для информационного блока 
+    const observerInformBlock = new IntersectionObserver((enteries, observerInformBlock) => {
+        enteries.forEach(entery => {
+            if (entery.isIntersecting) {
+                let topImage = document.querySelector(".imageOne");
+                let middleImage = document.querySelector(".imageTwo");
+                let bottomImage = document.querySelector(".imageThree");
+
+                topImage.classList.add("topImageAnimation");
+                middleImage.classList.add("middleImageAnimation");
+                bottomImage.classList.add("bottomImageAnimation");
+            }
+        })
+    }, optionsInformBlock);
+
+
+    // Наблюдатель и вызов действия при пересечении наблюдателя и наблюдаемого
+    // Подразумевается действие для для блока с одиночным PC
     const observerPC = new IntersectionObserver((entries, observerPC) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -108,8 +141,10 @@ window.onload = () => {
         })
     }, optionsForPc);
 
-    observerPC.observe(targetPC);
+    // Происходящее наблюдение
     observerPathes.observe(targetDream);
+    observerInformBlock.observe(targetInform);
+    observerPC.observe(targetPC);
 };
 
 
