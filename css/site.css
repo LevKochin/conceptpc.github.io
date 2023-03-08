@@ -1,0 +1,449 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.btn-purple {
+    background: linear-gradient(#ad87fe, #9887ff);
+    filter: drop-shadow(0 0 5px #d7ddac);
+}
+
+.imageOne {
+    position: relative;
+    width: 280px;
+    top: 100px;
+}
+
+.imageTwo {
+    position: relative;
+    width: 280px;
+    left: 100px;
+}
+
+.imageThree {
+    position: relative;
+    width: 280px;
+    bottom: 100px;
+    z-index: -1;
+}
+
+.halfImage {
+    position: relative;
+    width: 500px;
+    right: 200px;
+}
+
+.halfImageTwo {
+    position: relative;
+    left: 200px;
+}
+
+.secondGradient {
+    position: relative;
+}
+
+.firstGradient {
+    position: relative;
+}
+
+.bgGradient {
+    background: radial-gradient(#AD87FE, #9887FF);
+}
+
+.gradientBg {
+    background-image: url("../img/Gradient.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Courusel*/
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-carousel .my-card {
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.card-carousel .my-card:after {
+    position: absolute;
+    border-radius: 100%;
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.card-carousel .my-card:nth-child(0):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card-carousel .my-card:nth-child(1):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card-carousel .my-card:nth-child(2):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card-carousel .my-card:nth-child(3):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card-carousel .my-card:nth-child(4):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card-carousel .my-card:nth-child(5):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Если добавляются новые элементы корусели, то продолжить или задача автоматизации добавления элементов с помощью scss
+        .card-carousel .my-card:nth-child(6):before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .card-carousel .my-card:nth-child(7):before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .card-carousel .my-card:nth-child(8):before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .card-carousel .my-card:nth-child(9):before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }*/
+
+.card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+/*
+    Добавление размерностей для мобильной верстки
+
+*/
+.my-card>img {
+    width: 200%;
+}
+
+.my-card>a {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    color: white;
+}
+
+.my-card>span {
+    color: white;
+}
+
+/* Анимации и стилистика для SVG последнего элемента. Компьютер с различным описанием */
+#secondLeftLine,
+#firstLeftLine,
+#thirdLeftLine,
+#firstRightLine,
+#secondRightLine,
+#thirdRightLine,
+#firstLeftLineAnim,
+#secondLeftLineAnim,
+#thirdLeftLineAnim {
+    opacity: 0;
+}
+
+#textComp{
+    opacity: 0;
+}
+
+.textAnimation{
+    animation: textAnimationKF 2s 2.5s forwards;
+}
+
+@keyframes textAnimationKF {
+    to{
+        opacity: 1;
+    }
+}
+
+.firstRightPath {
+    stroke-dasharray: 335;
+    stroke-dashoffset: 335;
+    opacity: 0;
+    animation: firstRightPathKF 3s forwards;
+}
+
+@keyframes firstRightPathKF {
+    from {
+        stroke-dashoffset: 335;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.secondRightPath {
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    opacity: 0;
+    animation: secondRightPathKF 3s forwards;
+}
+
+@keyframes secondRightPathKF {
+    from {
+        stroke-dashoffset: 435;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.thirdRightPath {
+    stroke-dasharray: 315;
+    stroke-dashoffset: 315;
+    opacity: 0;
+    animation: thirdRightPathKF 3s forwards;
+}
+
+@keyframes thirdRightPathKF {
+    from {
+        stroke-dashoffset: 315;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.firstLeftPath {
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    opacity: 0;
+    animation: firstLeftPathKF 3s forwards;
+}
+
+@keyframes firstLeftPathKF {
+    from {
+        stroke-dashoffset: 350;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.secondLeftPath {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    opacity: 0;
+    animation: secondLeftPathKF 3s forwards;
+}
+
+
+@keyframes secondLeftPathKF {
+    from {
+        stroke-dashoffset: 360;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.thirdLeftPath {
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    opacity: 0;
+    animation: thirdLeftPathKF 3s forwards;
+}
+
+@keyframes thirdLeftPathKF {
+    from {
+        stroke-dashoffset: 350;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+/*Анимация и стилистика надписи - Dream*/
+.e {
+    opacity: 1;
+}
+.k, .l, .j, .d, .f, .g, .h, .main {
+    opacity: 0;
+}
+
+.mainAnimation {
+    animation: mainAnimationKF 0.2s 0.8s forwards;
+}
+
+@keyframes mainAnimationKF {
+    to {
+        opacity: 1;
+    }
+}
+
+.hAnimation {
+    animation: hAnimationKF 0.2s 0.7s forwards;
+}
+
+@keyframes hAnimationKF {
+    to {
+        opacity: 0.88;  
+    }
+}
+
+.gAnimation {
+    animation: gAnimationKF 0.2s 0.6s forwards;
+}
+
+@keyframes gAnimationKF {
+    to {
+        opacity: 0.75;
+    }
+}
+
+.fAnimation {
+    animation: fAnimationKF 0.2s 0.5s forwards;
+}
+
+@keyframes fAnimationKF {
+    to {
+        opacity: 0.62;
+    }
+}
+
+.dAnimation {
+    animation: dAnimationKF 0.2s 0.4s forwards;
+}
+
+@keyframes dAnimationKF {
+    to {
+        opacity: 0.5;
+    }
+}
+
+.jAnimation {
+    animation: jAnimationKF 0.2s 0.3s forwards;
+}
+
+@keyframes jAnimationKF {
+    to {
+        opacity: 0.38;
+    }
+}
+
+.lAnimation {
+    animation: lAnimationKF 0.2s 0.2s forwards;
+}
+
+@keyframes lAnimationKF {
+    to{
+        opacity: 0.25;
+    }
+}
+
+.kAnimation{
+    animation: kAnimationKF 0.2s 0.1s forwards;
+}
+
+@keyframes kAnimationKF {
+    to {
+        opacity: 0.12;
+    }
+}
+.eAnimation{
+    animation: eAnimationKF 0.2s forwards;
+}
+
+@keyframes eAnimationKF {
+    to {
+        opacity: 0;
+    }
+}
