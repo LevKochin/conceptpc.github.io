@@ -3,12 +3,54 @@
     #firstComputer {
         width: 90vw;
     }
+    
+    #dream {
+        width: 40vw;
+    }
+    
+    .my-card>img {
+        width: 300%;
+    }
+    
+    .my-card>a {
+        width: 167%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 67%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
     #firstComputer {
         width: 90vw;
+    }
+    
+    #dream {
+        width: 40vw;
+    }
+
+    .my-card>img {
+        width: 300%;
+    }
+    
+    .my-card>a {
+        width: 167%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 67%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
     }
 }
 
@@ -17,23 +59,177 @@
     #firstComputer {
         width: 90vw;
     }
+    
+    #dream {
+        width: 40vw;
+    }
+
+    .my-card>img {
+        width: 300%;
+    }
+    
+    .my-card>a {
+        width: 167%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 67%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #firstComputer {
+        width: 55vw;
+    }
+    
+    #dream {
+        width: 15vw;
+    }
+
+    .my-card>img {
+        width: 200%;
+    }
+    
+    .my-card>a {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
+}
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    #firstComputer {
+        width: 55vw;
+    }
+    
+    #dream {
+        width: 15vw;
+    }
+
+    .my-card>img {
+        width: 200%;
+    }
+    
+    .my-card>a {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
+}
 
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #firstComputer {
+        width: 55vw;
+    }
+    
+    #dream {
+        width: 15vw;
+    }
+
+    .my-card>img {
+        width: 200%;
+    }
+    
+    .my-card>a {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
+}
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {}
+@media only screen and (min-width : 1224px) {
+    #firstComputer {
+        width: 55vw;
+    }
+    
+    #dream {
+        width: 15vw;
+    }
+
+    .my-card>img {
+        width: 200%;
+    }
+    
+    .my-card>a {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
+}
 
 /* Large screens ----------- */
-@media only screen and (min-width : 1824px) {}
+@media only screen and (min-width : 1824px) {
+    #firstComputer {
+        width: 55vw;
+    }
+    
+    #dream {
+        width: 15vw;
+    }
+
+    .my-card>img {
+        width: 200%;
+    }
+    
+    .my-card>a {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        color: white;
+    }
+    
+    .my-card>span {
+        color: white;
+    }
+}
 
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {}
+only screen and (min-device-pixel-ratio : 1.5) {
+    #firstComputer {
+        width: 90vw;
+    }
+    
+    #dream {
+        width: 40vw;
+    }
+}

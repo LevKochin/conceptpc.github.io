@@ -32,6 +32,25 @@ $('.my-card').click(function () {
     $(this).next().addClass('next');
 });
 
+$('.my-card').swipe(function () {
+    $slide = $('.active').width();
+    console.log($('.active').position().left);
+
+    if ($(this).hasClass('next')) {
+        $('.card-carousel').stop(false, true).animate({ left: '-=' + $slide });
+    } else if ($(this).hasClass('prev')) {
+        $('.card-carousel').stop(false, true).animate({ left: '+=' + $slide });
+    }
+
+    $(this).removeClass('prev next');
+    $(this).siblings().removeClass('prev active next');
+
+    $(this).addClass('active');
+    $(this).prev().addClass('prev');
+    $(this).next().addClass('next');
+});
+
+
 // Keyboard nav
 $('html body').keydown(function (e) {
     if (e.keyCode == 37) { // left
