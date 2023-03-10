@@ -133,15 +133,16 @@ html {
     transform: translateX(-50%) translateY(-50%);
 }
 
-/* Если добавляются новые элементы корусели, то продолжить или задача автоматизации добавления элементов с помощью scss
-        .card-carousel .my-card:nth-child(6):before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-        }
 
+.card-carousel .my-card:nth-child(6):before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Если добавляются новые элементы корусели, то продолжить или задача автоматизации добавления элементов с помощью scss
         .card-carousel .my-card:nth-child(7):before {
             position: absolute;
             top: 50%;
@@ -204,16 +205,16 @@ html {
     opacity: 0;
 }
 
-#textComp{
+#textComp {
     opacity: 0;
 }
 
-.textAnimation{
+.textAnimation {
     animation: textAnimationKF 2s 2.5s forwards;
 }
 
 @keyframes textAnimationKF {
-    to{
+    to {
         opacity: 1;
     }
 }
@@ -333,7 +334,9 @@ html {
         --------------------------------------
 */
 
-.imageOne, .imageTwo, .imageThree {
+.imageOne,
+.imageTwo,
+.imageThree {
     opacity: 0;
 }
 
@@ -342,7 +345,7 @@ html {
 }
 
 @keyframes topImageAnimationKF {
-    to{
+    to {
         opacity: 1;
     }
 }
@@ -352,7 +355,7 @@ html {
 }
 
 @keyframes middleImageAnimationKF {
-    to{
+    to {
         opacity: 1;
     }
 }
@@ -362,10 +365,11 @@ html {
 }
 
 @keyframes bottomImageAnimationKF {
-    to{
+    to {
         opacity: 1;
     }
 }
+
 /*
         -------------------------------------
         Анимация и стилистика надписи - Dream
@@ -376,7 +380,15 @@ html {
     stroke: aliceblue;
     stroke-width: 3;
 }
-.k, .l, .j, .d, .f, .g, .h, .main {
+
+.k,
+.l,
+.j,
+.d,
+.f,
+.g,
+.h,
+.main {
     opacity: 0;
 }
 
@@ -396,7 +408,7 @@ html {
 
 @keyframes hAnimationKF {
     to {
-        opacity: 0.88;  
+        opacity: 0.88;
     }
 }
 
@@ -445,12 +457,12 @@ html {
 }
 
 @keyframes lAnimationKF {
-    to{
+    to {
         opacity: 0.25;
     }
 }
 
-.kAnimation{
+.kAnimation {
     animation: kAnimationKF 0.2s 0.1s forwards;
 }
 
@@ -459,7 +471,8 @@ html {
         opacity: 0.12;
     }
 }
-.eAnimation{
+
+.eAnimation {
     animation: eAnimationKF 1s forwards;
 }
 
