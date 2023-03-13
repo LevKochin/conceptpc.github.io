@@ -24,6 +24,15 @@
     .my-card>span {
         color: white;
     }
+
+    .comp {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    p {
+        font-size:18px;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -52,6 +61,11 @@
     .my-card>span {
         color: white;
     }
+
+    .comp {
+        width: 80vw;
+        height: 50vh;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -79,6 +93,11 @@
     
     .my-card>span {
         color: white;
+    }
+
+    .comp {
+        width: 80vw;
+        height: 50vh;
     }
 }
 

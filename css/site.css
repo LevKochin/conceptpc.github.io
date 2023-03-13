@@ -375,7 +375,8 @@ html {
         Анимация и стилистика надписи - Dream
         --------------------------------------
 */
-.e {
+.e,
+.ee {
     opacity: 1;
     stroke: aliceblue;
     stroke-width: 3;
@@ -388,6 +389,14 @@ html {
 .f,
 .g,
 .h,
+.kk,
+.ll,
+.jj,
+.dd,
+.ff,
+.gg,
+.hh,
+.main1,
 .main {
     opacity: 0;
 }

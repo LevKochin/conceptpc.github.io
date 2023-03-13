@@ -48,9 +48,11 @@ window.onload = () => {
     // Наблюдаемое, как объект PC
     let targetPC = document.querySelector(".comp");
     // Наблюдаемое, как объект DREAM
-    let targetDream = document.getElementById("dream");
+    let targetDream = document.querySelector(".dream");
+    let targetDream1 = document.querySelector(".dream1");
     // Наблюдаемое, как объект информационного блока
     let targetInform = document.querySelector(".imageTwo");
+
 
     // Конфигурация под наблюдателя или условия пересечения наблюдателя и наблюдаемого
     // Когда root: null - подразумевается, что в качестве наблюдателя выступает viewport
@@ -99,6 +101,33 @@ window.onload = () => {
     }, optionsForPathes);
 
     // Наблюдатель и вызов действия при пересечении наблюдателя и наблюдаемого
+    // Подразумевается действие с надписью DREAM 
+    const observerPathes1 = new IntersectionObserver((entries, observerPathes1) => {
+        entries.forEach(entery => {
+            if (entery.isIntersecting) {
+                let firstGroupPathes = document.querySelector(".ee");
+                let secondGroupPathes = document.querySelector(".kk");
+                let thirdGroupPathes = document.querySelector(".ll");
+                let fourthGroupPathes = document.querySelector(".jj");
+                let fifthGroupPathes = document.querySelector(".dd");
+                let sixthGroupPathes = document.querySelector(".ff");
+                let seventhGroupPathes = document.querySelector(".gg");
+                let eigthGroupPathes = document.querySelector(".hh");
+                let ninethGroupPathes = document.querySelector(".main1");
+
+                firstGroupPathes.classList.add("eAnimation");
+                secondGroupPathes.classList.add("kAnimation");
+                thirdGroupPathes.classList.add("lAnimation");
+                fourthGroupPathes.classList.add("jAnimation");
+                fifthGroupPathes.classList.add("dAnimation");
+                sixthGroupPathes.classList.add("fAnimation");
+                seventhGroupPathes.classList.add("gAnimation");
+                eigthGroupPathes.classList.add("hAnimation");
+                ninethGroupPathes.classList.add("mainAnimation");
+            }
+        })
+    }, optionsForPathes);
+    // Наблюдатель и вызов действия при пересечении наблюдателя и наблюдаемого
     // Подразумевается действие для информационного блока 
     const observerInformBlock = new IntersectionObserver((enteries, observerInformBlock) => {
         enteries.forEach(entery => {
@@ -143,6 +172,7 @@ window.onload = () => {
 
     // Происходящее наблюдение
     observerPathes.observe(targetDream);
+    observerPathes1.observe(targetDream1);
     observerInformBlock.observe(targetInform);
     observerPC.observe(targetPC);
 };
