@@ -127,6 +127,10 @@
     .my-card>span {
         color: white;
     }
+
+    .comp {
+        height: 100vh;
+    }
 }
 
 /* iPads (landscape) ----------- */
@@ -154,6 +158,10 @@
     
     .my-card>span {
         color: white;
+    }
+
+    .comp {
+        height: 100vh;
     }
 }
 
@@ -183,6 +191,10 @@
     .my-card>span {
         color: white;
     }
+    
+    .comp {
+        height: 100vh;
+    }
 }
 
 /* Desktops and laptops ----------- */
@@ -210,6 +222,10 @@
     
     .my-card>span {
         color: white;
+    }
+    
+    .comp {
+        height: 100vh;
     }
 }
 
@@ -239,6 +255,10 @@
     .my-card>span {
         color: white;
     }
+    
+    .comp {
+        height: 100vh;
+    }
 }
 
 /* iPhone 4 ----------- */
@@ -250,5 +270,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     
     #dream {
         width: 40vw;
+    }
+    
+    .comp {
+        height: 100vh;
     }
 }

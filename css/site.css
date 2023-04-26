@@ -4,6 +4,24 @@ html {
     font-size: 14px;
 }
 
+a i::before {
+    transition: 1s;
+    transform: scale(1);
+}
+
+a:hover i::before{
+    transition: 0.5s;
+    transform: scale(2);
+}
+
+#logo{
+    transform: rotate(0deg);
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
 .btn-purple {
     background: linear-gradient(#ad87fe, #9887ff);
     filter: drop-shadow(0 0 5px #d7ddac);
@@ -13,19 +31,33 @@ html {
     position: relative;
     width: 280px;
     top: 100px;
+    z-index: 2;
+}
+
+.imageOne:hover {
+    transform: scale(1.2);
 }
 
 .imageTwo {
     position: relative;
     width: 280px;
     left: 100px;
+    z-index: 3;
+}
+
+.imageTwo:hover {
+    transform: scale(1.2);
 }
 
 .imageThree {
     position: relative;
     width: 280px;
     bottom: 100px;
-    z-index: -1;
+    z-index: 1;
+}
+
+.imageThree:hover {
+    transform: scale(1.2);
 }
 
 .halfImage {
@@ -34,9 +66,17 @@ html {
     right: 200px;
 }
 
+.halfImage:hover {
+    transform: scale(1.1);
+}
+
 .halfImageTwo {
     position: relative;
     left: 200px;
+}
+
+.halfImageTwo:hover {
+    transform: scale(1.1);
 }
 
 .secondGradient {
@@ -49,6 +89,8 @@ html {
 
 .bgGradient {
     background: radial-gradient(#AD87FE, #9887FF);
+    height: 582px;
+    overflow: hidden;
 }
 
 .gradientBg {
@@ -489,4 +531,29 @@ html {
     to {
         opacity: 0;
     }
+}
+
+text{    
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.transition3{
+    transition: 3s ease-in-out;
+}
+
+.transition1 {
+    transition: 1s ease-in-out;
+}
+svg > a > rect {
+    stroke-dasharray: 146;
+    stroke-dashoffset: 146;
+}
+
+svg:hover > a > rect {
+    stroke-dashoffset: 0;
+}
+
+.pointer {
+    cursor: pointer;
 }
